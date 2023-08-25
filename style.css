@@ -22,6 +22,7 @@ body {
     display: block;
     margin: 0 auto 20px;
     perspective: 1000px;
+    
 }
 .profile-image-inner {
     width: 100%;
@@ -31,6 +32,7 @@ body {
     border: 5px dashed #030000;
     border-radius: 50%;
     box-shadow: 0px 0px 50px rgb(16, 206, 212);
+    
 }
 .profile-image-front,
 .profile-image-back {
@@ -40,33 +42,40 @@ body {
     border-radius: 50%;
     backface-visibility: hidden;
 }
+
 .profile-image-front {
     transform: rotateY(0deg);
     z-index: 2;
 }
+
 .profile-image-back {
     transform: rotateY(180deg);
 }
+
 .profile h1 {
     font-size: 24px;
     text-align: center;
     margin: 0 0 10px;
 }
+
 .profile h3 {
     font-size: 24px;
     text-align: center;
     margin: 0px;
 }
+
 .profile p {
     font-size: 16px;
     text-align: center;
     margin-left: 0px;
     margin: 0 0 20px;
 }
+
 .social-links {
     text-align: left;
     margin-bottom: 10px;
 }
+
 .social-links a {
     color: #333;
     margin: 0 10px;
@@ -74,26 +83,29 @@ body {
     text-decoration: none;
     position: relative;
     display: inline-block;
-    /* Other styles */
-    transition: transform 0.5s; /* Added transition property for smooth scaling */
+    transition: transform 0.5s;
 }
+
 .social-links a:hover {
-    transform: scale(2.2); /* Zoom in effect on hover */
+    transform: scale(2.2);
 }
+
 .profile-details {
-    /* Your profile details container styles here */
     display: inline-block;
     text-align: none;
     margin-top: 20px;
 }
+
 .profile-details.active {
     display: block;
 }
+
 .profile-details-container {
     font-size: 16px;
     text-align: left;
     margin: 0 0 20px;
 }
+
 .profile-details-container,
 .profile-details-container1 {
     display: fixed;
@@ -103,6 +115,7 @@ body {
     border: 3px solid #030000;
     border-radius: 10px;
 }
+
 .profile-details-container.active {
     display: block;
 }
