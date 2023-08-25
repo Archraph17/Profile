@@ -1,0 +1,144 @@
+body {
+    font-size: 15px;
+    font-family: Pacifico;
+    background-color: #336ff3;
+    margin: 0;
+    padding: 0;
+}
+
+.profile {
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgb(238, 201, 201);
+    padding: 20px;
+    box-shadow: 30px 25px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    perspective: 1000px;
+}
+.profile-image-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    border: 5px dashed #030000;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px rgb(16, 206, 212);
+}
+.profile-image-front,
+.profile-image-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+}
+.profile-image-front {
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+.profile-image-back {
+    transform: rotateY(180deg);
+}
+.profile h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 0 10px;
+}
+.profile h3 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0px;
+}
+.profile p {
+    font-size: 16px;
+    text-align: center;
+    margin-left: 0px;
+    margin: 0 0 20px;
+}
+.social-links {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.social-links a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    /* Other styles */
+    transition: transform 0.5s; /* Added transition property for smooth scaling */
+}
+.social-links a:hover {
+    transform: scale(2.2); /* Zoom in effect on hover */
+}
+.profile-details {
+    /* Your profile details container styles here */
+    display: inline-block;
+    text-align: none;
+    margin-top: 20px;
+}
+.profile-details.active {
+    display: block;
+}
+.profile-details-container {
+    font-size: 16px;
+    text-align: left;
+    margin: 0 0 20px;
+}
+.profile-details-container,
+.profile-details-container1 {
+    display: fixed;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 3px solid #030000;
+    border-radius: 10px;
+}
+.profile-details-container.active {
+    display: block;
+}
+
+.interaction-icons {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+}
+
+.interaction-icon {
+    font-size: 24px;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.interaction-icon:hover {
+    transform: scale(1.2);
+    color: #ff5733;
+}
+
+.interaction-tooltip {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: #000;
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.interaction-icon:hover .interaction-tooltip {
+    opacity: 1;
+}

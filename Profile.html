@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Profile</title>
+</head>
+<body>
+    <div class="profile">
+        <div class="social-links">
+            <a href="https://twitter.com/yourusername" target="_blank" data-profile="Twitter">
+                <span class="social-tooltip"> 
+                    <i class="fab fa-twitter"></i>
+                </span>
+            </a>
+            <a href="https://www.tiktok.com/yourusername" target="_blank" data-profile="LinkedIn">
+                <span class="social-tooltip"> 
+                    <i class="fab fa-tiktok"></i>
+                </span>
+            </a>
+            <a href="https://www.instagram.com/yourusername" target="_blank" data-profile="Instagram">
+                <span class="social-tooltip"> 
+                    <i class="fab fa-instagram"></i>
+                </span>
+            </a>
+            <a href="https://www.facebook.com/osano96" target="_blank" data-profile="Facebook">
+                <span class="social-tooltip"> 
+                    <i class="fab fa-facebook"></i>
+                </span>
+            </a>
+        </div>
+            <div class="profile-image">
+                <div class="profile-image-inner">
+                <img class="profile-image-front" src="FullSizeRender (2).jpg" alt="Front Profile Picture">
+                <img class="profile-image-back" src="FullSizeRender (1).jpg" alt="Back Profile Picture">
+             </div>
+        </div>
+        
+        <h1>My name is <u>Raphael Joshua O. Ramos</u></h1>
+        <p id="auto-typing-text" style="font-family: 'Courier New', Courier, monospace; font-style: italic;"></p>
+
+        <div class="profile-details-container">
+            <h3>About Me</h3>
+            <ul class="details-list" style="font-size: 15px;">
+                <p1><strong>Birthday:</strong> March 17, 2002 <br>
+                    <strong>Age:</strong> 21 years old <br>
+                    <strong>Location:</strong> Molino IV, Bacoor, Cavite <br>
+                    <strong>Occupation:</strong> College Student <br>
+                </p1>
+                <!-- Add more details as needed -->
+            </ul>
+        </div>
+        <!-- Details About Me section -->
+        <div class="profile-details-container1" style="font-size: 15px;">
+            <h3>Details About Me</h3>
+            <ul class="details-list">
+                <li><strong>Skills:</strong> HTML, CSS, JavaScript, React, Responsive Design</li>
+                <li><strong>Hobbies:</strong> Gaming, Eating, Reading</li>
+                <li><strong>Interests:</strong> Technology, User Experience, Personal Growth</li>
+                <!-- Add more details as needed -->
+            </ul>
+        </div>
+        <div class="interaction-icons">
+            <span class="interaction-icon" onclick="likeProfile()">
+                <i class="far fa-heart"></i>
+                <span class="interaction-tooltip">Like</span>
+            </span>
+            <span class="interaction-icon" onclick="commentProfile()">
+                <i class="far fa-comment"></i>
+                <span class="interaction-tooltip">Comment</span>
+            </span>
+            <span class="interaction-icon" onclick="shareProfile()">
+                <i class="fas fa-share"></i>
+                <span class="interaction-tooltip">Share</span>
+            </span>
+        </div>
+    </div>
+
+    <script src ="profile.js"> </script>
+
+</body>
+</html>
